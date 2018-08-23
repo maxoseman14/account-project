@@ -6,9 +6,13 @@ public class Account_Main {
 		
 	Service service = new Service();
 	Account max = new Account("Max", "Oseman", 123);
+	Account seb = new Account("Seb", "Delaney", 124);
 	service.addAccountToMap(max);
+	service.addAccountToMap(seb);
 	service.getAccountFromMap(1);
-	System.out.println(service.getAccountFromMap(1).toString());
+	System.out.println(service.getAccountFromMap(2).toString());
+	System.out.println(service.convertMapToJson());
+
 	
 	
 				
