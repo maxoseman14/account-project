@@ -1,5 +1,7 @@
 package maven_archetype_quickstart.com.qa.accountapplication;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +11,7 @@ public class AccountAppTest extends Object {
 	private Service service;
 
 	@Before
-	protected void setUp() throws Exception {
+	public void setUp() throws Exception {
 	
 		service = new Service();
 		Account tony = new Account("Tony", "Glover", 345);
@@ -24,7 +26,7 @@ public class AccountAppTest extends Object {
 	@Test
 	public void getAccountsByName () {
 		
-		assertEquals(2, service.getNumberAccountsByName());
+		assertEquals(2, service.getNumberAccountsByName("Bob"));
 	
 	}
 	

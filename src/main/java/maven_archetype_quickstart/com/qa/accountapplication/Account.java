@@ -13,10 +13,24 @@ public class Account {
 		this.accountNumber = accountNumber;
 	}
 	
-	
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+
+
 	@Override
 	public String toString() {
 		return "Account [firstName=" + firstName + ", lastName=" + lastName + ", accountNumber=" + accountNumber + "]";
+	}
+
+
+
+
+	public String getFirstName() {
+		return firstName;
 	}
 	
 	
